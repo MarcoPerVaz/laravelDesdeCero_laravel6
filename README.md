@@ -31,5 +31,7 @@
 <br>
 
 <h2>Notas:</h2>
-- El directorio Instrucciones/GuíaCommit.txt solo contiene los cambios hechos en ese commit en específico.
-- Estar pendiente de este documento ya que podría tener actualizaciones si un commit lo necesita.
+  <ul>
+    <li>El directorio Instrucciones/GuíaCommit.txt solo contiene los cambios hechos en ese commit en específico.</li>
+    <li>Estar pendiente de este documento ya que podría tener actualizaciones si un commit lo necesita.</li>
+  </ul>
