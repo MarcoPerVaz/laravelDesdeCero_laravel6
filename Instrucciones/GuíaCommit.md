@@ -1,13 +1,22 @@
 
 <h1 align="center">Proyecto Curso Laravel Desde Cero con Laravel 6</h1>
-<h3><b>Commit -</b> <strong>Estructura básica de carpetas y archivos</strong></h3>
+<h3><b>Commit -</b> <strong>Rutas</strong></h3>
 <hr>
 <ol>
   <li>
     <p>Link para la documentación oficial de Laravel 6</p>
     <pre>
-      <a href="https://laravel.com/docs/6.x/structure">Documentación - Estructura básica de carpetas y archivos en Laravel</a>
+      <a href="https://laravel.com/docs/6.x/routing">Documentación - Rutas</a>
     </pre>
   </li>
+  <!-- Instrucciones del commit -->
+  <li>Edición del directorio routes/web.php</li>
 </ol>
+
+<!-- Notas -->
+<h3><b>Notas:</b></h3>
+<ul>
+  <li>Más información en el directorio routes/web.php</li>
+</ul>
+
 
