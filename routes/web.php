@@ -38,10 +38,11 @@ Route::get('/sobre-nosotros', function () {
     return "<h1>Toda la información sobre nosotros!</h1>";
 })->name("nosotros");
 
-/* Notas:
-    *Si se tienen rutas iguales, el orden de lectura de laravel es de arriba hacía abajo, por lo que la ruta de abajo será
-     la usada y mostrada por laravel
-    *Las rutas con nombre nos permite cambiar la url sin necesidad de cambiar el href de todos los enlaces del HTML 
-     sea uno o mil
-        *Se usa el helper route('nameRoute') de laravel
-*/
+/* Vistas */
+/* Ejemplo de ruta con nombre */
+Route::get('/home', function () {
+    $nombre = "Marco A.";
+    return view('home');
+})->name('home');
+
+
