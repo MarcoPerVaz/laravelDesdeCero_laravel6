@@ -1,6 +1,6 @@
 
 <h1 align="center">Proyecto Curso Laravel Desde Cero con Laravel 6</h1>
-<h3><b>Commit -</b> <strong>Crear una vista y su ruta</strong></h3>
+<h3><b>Commit -</b> <strong>Crear una vista y pase de datos</strong></h3>
 <hr>
 <ol>
   <li>
@@ -18,7 +18,6 @@
 <h3><b>Notas:</b></h3>
 <ul>
   <li>Más información en el directorio routes/web.php</li>
-  <li>Más información en el directorio views/home.blade.php</li>
 </ul>
 
 
