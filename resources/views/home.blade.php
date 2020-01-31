@@ -7,17 +7,34 @@
   <title>Mi primera vista</title>
 </head>
 <body>
-  <h1><?php echo("Hola mundo $nombre $apellido") ?></h1>
-  <h1>Hola mundo Laravel - {{ $nombre . " " . $apellido . "<script>alert('Hola mundo');</script>" }}</h1>
-  <h1>Hola mundo Laravel - {!! $nombre." ".$apellido."<script>alert('Holamundo');</script>" !!}</h1>
+  <h1>Hola mundo Laravel - {!! $nombre." ".$apellido !!}</h1>
+
+  {{-- Ciclo foreach --}}
+  <ul>
+    <?php foreach ($posts as $key => $post) : ?>
+      <li>{{ $post }}</li>
+    <?php endforeach; ?>
+  </ul>
+
+  <ul>
+    @foreach ($posts as $post)
+      <li>{{ $post }}</li>
+    @endforeach
+  </ul>
+
+  <ul>
+    @forelse ($posts2 as $post)
+      <li>{{ $post }}</li>
+    @empty
+        <li>No posts</li>
+    @endforelse
+  </ul>
 </body>
 
 </html>
 
 {{-- Notas:
-      *PHP puro (1er <h1></h1>)
-      *Ejemplo de sintaxis para protección contra ataques XSS (2do <h1></h1>)
-      *Ejemplo de sintaxis para inserción HTML en la vista (3er <h1></h1>)
+      
 
 --}}
 

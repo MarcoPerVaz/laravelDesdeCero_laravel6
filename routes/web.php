@@ -39,11 +39,16 @@ Route::get('/sobre-nosotros', function () {
 })->name("nosotros");
 
 /* Vistas */
+
 /* Ejemplo de ruta con nombre y parámetro opcional y pase de variables a la vista*/
 Route::get('/home/{nombre?}/{apellido?}', function ($nombre = "Pepe", $apellido = "Hernández") {
-    // return view('home')->with('nombre', $nombre)->with('apellido', $apellido); /* Función with() */
 
-    return view('home', ['nombre' => $nombre, 'apellido' => $apellido]); /* Pasando array */
+    $posts = ["Posts1", "Posts2", "Posts3", "Posts4"];
+    $posts2 = [];
+
+    return view('home', 
+        ['nombre' => $nombre, 'apellido' => $apellido, 'posts' => $posts, 'posts2' => $posts2]
+    ); /* Pasando array */
 })->name('home');
 
 
