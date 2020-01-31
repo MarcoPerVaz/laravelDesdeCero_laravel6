@@ -29,12 +29,40 @@
         <li>No posts</li>
     @endforelse
   </ul>
+  {{-- Estructuras de control --}}
+  <ul>
+
+    @isset($posts3)
+        isset
+    @endisset
+
+    @empty($posts3)
+        empty
+    @endempty
+
+    @forelse ($posts as $post)
+
+      <li>
+        @if ($loop->first)
+          Primero:
+        @elseif ($loop->last)
+          Último:
+        @else
+        Medio:
+        @endif
+        {{ $post }}
+      </li>
+    @empty
+        <li>No posts</li>
+    @endforelse
+  </ul>
 </body>
 
 </html>
 
-{{-- Notas:
-      
+<!-- Notas:
+      *la función dd() de php muestra de forma más organizada el contenido de una variable
+        Ejemplo: <?php // dd($loop); ?>
 
---}}
+-->
 

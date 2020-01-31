@@ -1,12 +1,12 @@
 
 <h1 align="center">Proyecto Curso Laravel Desde Cero con Laravel 6</h1>
-<h3><b>Commit -</b> <strong>Ciclos en Blade</strong></h3>
+<h3><b>Commit -</b> <strong>Estructuras de control en Blade</strong></h3>
 <hr>
 <ol>
   <li>
     <p>Link para la documentación oficial de Laravel 6</p>
     <pre>
-      <a href="https://laravel.com/docs/6.x/blade#loops">Documentación - Ciclos</a>
+      <a href="https://laravel.com/docs/6.x/blade#if-statements">Documentación - Estructuras de control</a>
     </pre>
   </li>
   <!-- Instrucciones del commit -->
