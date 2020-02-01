@@ -15,40 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-Route::get('/test', function () {
-    return "Hola mundo";
-});
-
-/* Ejemplo - Ruta con parámetros obligatorios */
-Route::get('/hola/{nombre}', function ($nombre) {
-    return "Hola mundo $nombre";
-});
-
-/* Ejemplo - Ruta con parámetros opcionales */
-Route::get('/hola/{nombre?}', function ($nombre = "Juan") {
-    /* Link sin Rutas con nombre */
-        // return "Hola $nombre conocenos: <a href='/nosotros'>Nosotros</a>";
-    /* Link con Rutas con nombre */
-        return "Hola $nombre conocenos: <a href='". route('nosotros') . "'>Nosotros</a>";
-});
-
-/* Ejemplo - Ruta con nombre */
-Route::get('/sobre-nosotros', function () {
-    return "<h1>Toda la información sobre nosotros!</h1>";
-})->name("nosotros");
-
-/* Vistas */
-
-/* Ejemplo de ruta con nombre y parámetro opcional y pase de variables a la vista*/
-Route::get('/home/{nombre?}/{apellido?}', function ($nombre = "Pepe", $apellido = "Hernández") {
-
-    $posts = ["Posts1", "Posts2", "Posts3", "Posts4"];
-    $posts2 = [];
-
-    return view('home', 
-        ['nombre' => $nombre, 'apellido' => $apellido, 'posts' => $posts, 'posts2' => $posts2]
-    ); /* Pasando array */
-})->name('home');
+/* Ejemplo de ruta que apunta a controlador@función */
+Route::get('/post', 'PostController@index');
 
 
