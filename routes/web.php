@@ -15,7 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/* Ejemplo de ruta que apunta a controlador@función */
-Route::get('/post', 'PostController@index');
 
 
+
+/* Ejemplo de Ruta para Controlador Resource (7 métodos en una sola ruta) */
+Route::resource('admin/post', 'Dashboard\PostController');
