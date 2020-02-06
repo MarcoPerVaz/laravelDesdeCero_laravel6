@@ -1,33 +1,26 @@
 
 <h1 align="center">Proyecto Curso Laravel Desde Cero con Laravel 6</h1>
-<h3><b>Commit -</b> <strong>Creando un controlador de tipo resource con Artisan</strong></h3>
+<h3><b>Commit -</b> <strong>Configurar la base de datos en entorno de desarrollo</strong></h3>
 <hr>
 <ol>
-  <li>
-    <p>Link para la documentación oficial de Laravel 6</p>
-    <pre>
-      <a href="https://laravel.com/docs/6.x/controllers#resource-controllers">Documentación - Controlador de tipo resource desde Artisan</a>
-    </pre>
-  </li>
   <!-- Instrucciones del commit -->
   <li>
-    Eliminación del controlador PostController
+    Edición del archivo .env
+    <br>
+    <span>
+      DB_DATABASE=laravelDesdeCero_Udemy-laravel6
+      <br>
+      DB_USERNAME=root
+      <br>
+      DB_PASSWORD=
+    </span>
   </li>
-  <li>
-    Creación del controlador Dashboard/PostController
-    <pre>php artisan make:controller Dashboard/PostController -r</pre>
-  </li>
-  <li>Edición del archivo routes/web.php</li>
 </ol>
 
 <!-- Notas -->
 <h3><b>Notas:</b></h3>
 <ul>
-  <li>Para saber que rutas existen en el Proyecto
-    <pre>php artisan route:list</pre>
-    <pre>php artisan r:l</pre>
-  </li>
-  <li>Al crear un controlador de Recurso, Laravel crea 7 rutas de forma automática</li>
+  <li>El archivo .env recopila la información importante del Framework para mejorar la administración del proyecto</li>
 </ul>
 
 
