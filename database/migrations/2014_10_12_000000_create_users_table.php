@@ -34,3 +34,12 @@ class CreateUsersTable extends Migration
         Schema::dropIfExists('users');
     }
 }
+
+/* Notas:
+    *La función up es lo que hace la migración(migration)
+        *se crea la tabla users
+    *La función down es lo que quita la migración(rollback)
+        *Rollback es regresar un paso o todos los pasos dependiendo lo que se necesite 
+         en la tabla o base de datos
+          Ejemplo: dropIfExists() si la tabla users existe entonces al hacer rollback se elimina la tabla users
+*/
