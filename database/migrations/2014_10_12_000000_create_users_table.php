@@ -42,4 +42,7 @@ class CreateUsersTable extends Migration
         *Rollback es regresar un paso o todos los pasos dependiendo lo que se necesite 
          en la tabla o base de datos
           Ejemplo: dropIfExists() si la tabla users existe entonces al hacer rollback se elimina la tabla users
+    *Rollback trabaja sobre la tabla migrations de la base de datos, donde la columna batch se refiere al número 
+     que indica lo que afectaría de hacerse un rollback
+        Ejemplo: si el campo es 2 y se hace un rollback sólo quedaría lo que tenga 1
 */
