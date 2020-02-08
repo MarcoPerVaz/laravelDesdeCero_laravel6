@@ -1,6 +1,6 @@
 
 <h1 align="center">Proyecto Curso Laravel Desde Cero con Laravel 6</h1>
-<h3><b>Commit -</b> <strong>Introducción a las migraciones(migration y rollback) - parte 2</strong></h3>
+<h3><b>Commit -</b> <strong>Crear las migraciones para los Posts</strong></h3>
 <hr>
 <ol>
   <li>
@@ -8,33 +8,37 @@
     <pre>
       <a href="https://laravel.com/docs/6.x/migrations">Documentación - Migraciones</a>
     </pre>
-    <pre>
-      <a href="https://laravel.com/docs/6.x/migrations#running-migrations">Documentación - Correr las migraciones</a>
-    </pre>
-    <pre>
-      <a href="https://laravel.com/docs/6.x/migrations#rolling-back-migrations">Documentación - Rollback</a>
-    </pre>
   </li>
   <!-- Instrucciones del commit -->
-  <li>Edición del archivo database/migrations/create_users_table.php</li>
+  <li>
+    Creación y edición de la migración create_posts_table
+    <pre>php artisan make:migration create_posts_table</pre>
+  </li>
+  <li>
+    <pre>php artisan migrate</pre>
+  </li>
 </ol>
 
 <!-- Notas -->
 <h3><b>Notas:</b></h3>
 <ul>
-  <li>Las migraciones son control de versiones para la Base de datos</li>
-  <li>En esta sección se explica como funcionan las migraciones</li>
+  <li>Para ayudar a laravel con la configuración de la Base de Datos es bueno trabajar con convenciones o estándares</li>
+  <li>El nombre de la migración lleva al inicio la fecha de creación de la migración (Laravel lo hace automáticamente)</li>
   <li>
-    Para crear las migraciones desde Laravel a la Base de datos se usa el comando
-    <pre>php artisan migrate</pre>
+    El nombre debe ser creado con la siguiente nomenclatura
     <br>
-    <em>*Debe tener corriendo el servidor de Base de Datos (Laragon en este caso)</em>
+    _fecha_create_nombreTablaEnPlural_table_
+    <br>
+    <em>*Se usa create cuando se quiere crear una nueva tabla</em>
   </li>
 </ul>
 
 <br>
 
-<em>*Más información en el archivo database/migrations/2014_10_12_000000_create_users_table.php</em>
+<em>
+  *En VsCode para escribir rápidamente la creación de columnas de la base de datos solo es necesario comenzar a escribir
+   Column y el ayudante de VsCode muestra las opciones. Es necesario instalar o tener la extensión <b>Laravel 5.6 Snippets</b>
+</em>
 
 
 
