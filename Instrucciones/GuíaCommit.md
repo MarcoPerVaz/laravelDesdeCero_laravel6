@@ -1,6 +1,6 @@
 
 <h1 align="center">Proyecto Curso Laravel Desde Cero con Laravel 6</h1>
-<h3><b>Commit -</b> <strong>Crear las migraciones para los Posts</strong></h3>
+<h3><b>Commit -</b> <strong>Crear las migraciones para las Categorías</strong></h3>
 <hr>
 <ol>
   <li>
@@ -11,8 +11,8 @@
   </li>
   <!-- Instrucciones del commit -->
   <li>
-    Creación y edición de la migración create_posts_table
-    <pre>php artisan make:migration create_posts_table</pre>
+    Creación y edición de la migración create_categories_table
+    <pre>php artisan make:migration create_categories_table</pre>
   </li>
   <li>
     <pre>php artisan migrate</pre>
