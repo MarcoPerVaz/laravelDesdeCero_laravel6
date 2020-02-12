@@ -1,21 +1,23 @@
 
 <h1 align="center">Proyecto Curso Laravel Desde Cero con Laravel 6</h1>
-<h3><b>Commit -</b> <strong>Crear las migraciones para las Categorías</strong></h3>
+<h3><b>Commit -</b> <strong>Comando Refresh para las migraciones</strong></h3>
 <hr>
 <ol>
   <li>
     <p>Link para la documentación oficial de Laravel 6</p>
     <pre>
-      <a href="https://laravel.com/docs/6.x/migrations">Documentación - Migraciones</a>
+      <a href="https://laravel.com/docs/6.x/migrations#rolling-back-migrations">Documentación - Migraciones | Refresh</a>
     </pre>
   </li>
   <!-- Instrucciones del commit -->
   <li>
-    Creación y edición de la migración create_categories_table
-    <pre>php artisan make:migration create_categories_table</pre>
+    Se crea un registro manual en la tabla posts
   </li>
   <li>
-    <pre>php artisan migrate</pre>
+    <pre>php artisan refresh</pre>
+    <em>*Laravel hace un rollback(función down) de todas las tablas, luego vuelve a crear las migraciones(función up)</em>
+    <br>
+    <em>*Refresh borra los valores en las tablas</em>
   </li>
 </ol>
 
