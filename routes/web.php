@@ -19,4 +19,4 @@ Route::get('/', function () {
 
 
 /* Ejemplo de Ruta para Controlador Resource (7 métodos en una sola ruta) */
-Route::resource('admin/post', 'Dashboard\PostController');
+Route::resource('dashboard/post', 'Dashboard\PostController');
