@@ -36,8 +36,11 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        echo "Hola mundo";
+        /* Formas de obtener el valor de los input mediante Request */
+            // echo "Hola mundo: " . $request->input('title');
+            // dd($request->all());
+            echo "Hola mundo: " . $request->title;
+            // echo "Hola mundo: " . request("title");
     }
 
     /**
