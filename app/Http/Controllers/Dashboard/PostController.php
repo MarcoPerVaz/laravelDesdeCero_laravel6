@@ -36,11 +36,12 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        /* Formas de obtener el valor de los input mediante Request */
-            // echo "Hola mundo: " . $request->input('title');
-            // dd($request->all());
+        /* Formas de validación de campos del formulario */
+            $validatedData = $request->validate([
+                'title' => 'required|min:5|max:500',
+            ]);
+
             echo "Hola mundo: " . $request->title;
-            // echo "Hola mundo: " . request("title");
     }
 
     /**

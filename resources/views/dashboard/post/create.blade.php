@@ -2,6 +2,12 @@
 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 <script src="{{ asset('js/app.js') }}"></script>
 
+{{-- Mostrando errores de validación --}}
+  @if ( $errors->any() )
+    @foreach ($errors->all() as $error)
+        {{ $error }}
+    @endforeach
+  @endif
 
 <div class="container">
   <form action="{{ route('post.store') }}" method="POST">
