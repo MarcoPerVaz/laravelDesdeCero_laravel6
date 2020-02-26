@@ -2,14 +2,16 @@
 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 <script src="{{ asset('js/app.js') }}"></script>
 
-{{-- Mostrando errores de validación --}}
+<div class="container">
+  {{-- Mostrando errores de validación --}}
   @if ( $errors->any() )
     @foreach ($errors->all() as $error)
+      <div class="alert alert-danger">
+
         {{ $error }}
+      </div>
     @endforeach
   @endif
-
-<div class="container">
   <form action="{{ route('post.store') }}" method="POST">
     {{-- csrf protection --}}
     @csrf
@@ -19,6 +21,12 @@
     <div class="form-group">
       <label for="title">Título</label>
       <input class="form-control" type="text" name="title" id="title">
+
+      {{-- Mostrar error individual (solo sirve de muestra) --}}
+      @error('title')
+        <small class="text-danger">{{ $error }}</small>
+      @enderror
+      
     </div> 
     {{-- End Title --}}
   

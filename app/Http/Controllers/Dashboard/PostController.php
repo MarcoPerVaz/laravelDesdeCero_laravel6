@@ -39,6 +39,8 @@ class PostController extends Controller
         /* Formas de validación de campos del formulario */
             $validatedData = $request->validate([
                 'title' => 'required|min:5|max:500',
+                // 'url_clean' => 'required|min:5|max:500',
+                'content' => 'required|min:5',
             ]);
 
             echo "Hola mundo: " . $request->title;
