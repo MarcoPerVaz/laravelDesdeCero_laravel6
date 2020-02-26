@@ -1,8 +1,8 @@
 
-<link rel="stylesheet" href="{{ asset('css/app.css') }}">
-<script src="{{ asset('js/app.js') }}"></script>
+@extends('dashboard.master')
 
-<div class="container">
+@section('content')
+
   {{-- Mostrando errores de validación --}}
   @if ( $errors->any() )
     @foreach ($errors->all() as $error)
@@ -48,4 +48,5 @@
     <input class="btn btn-primary" type="submit" value="Enviar">
     {{-- End Button --}}
   </form>
-</div>
+  
+@endsection
